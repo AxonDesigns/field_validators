@@ -28,7 +28,7 @@ import 'package:field_validators/field_validators.dart';
 
 ## Usage
 
-Simply use the `FieldValidators` class to validate a `textFormField`.
+Simple use of the `FieldValidators` class to validate a `textFormField`.
 
 ```dart
 TextFormField(

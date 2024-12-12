@@ -17,7 +17,7 @@ class FieldValidators {
   static ValidationFunction<T> email<T>({String error = "Invalid email"}) {
     return (value) {
       if (value == null) return null;
-      if (!RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$").hasMatch(value.toString())) return error;
+      if (!RegExp(r"^(?=[a-zA-Z0-9@._%+-]{1,254}$)([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9-]+\.[a-zA-Z]{2,})$").hasMatch(value.toString())) return error;
       return null;
     };
   }
